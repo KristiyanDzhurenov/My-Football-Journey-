@@ -7,10 +7,10 @@ toggleButton.addEventListener("click", () => {
   // Запазване на избора в localStorage
   if (body.classList.contains("dark-mode")) {
     localStorage.setItem("theme", "dark");
-    toggleButton.textContent = "🌙 Смени тема";
+    toggleButton.textContent = "🌙/🌞 Смени тема";
   } else {
     localStorage.setItem("theme", "light");
-    toggleButton.textContent = "🌞 Смени тема";
+    toggleButton.textContent = "🌙/🌞 Смени тема";
   }
 });
 
@@ -19,6 +19,6 @@ window.addEventListener("load", () => {
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme === "dark") {
     body.classList.add("dark-mode");
-    toggleButton.textContent = "🌙 Смени тема";
+    toggleButton.textContent = "🌙/🌞 Смени тема";
   }
 });
