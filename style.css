@@ -33,6 +33,7 @@ body {
   
   section {
     margin-bottom: 2rem;
+    font-size: large;
   }
   
   footer {
@@ -40,9 +41,10 @@ body {
     color: white;
     text-align: center;
     padding: 1rem;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    padding-bottom: 1rem;
   }
   .dark-mode {
     background-color: #121212;
@@ -53,3 +55,9 @@ body {
     color: #4eaaff;
   }
   
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: large;
+    }
