@@ -28,4 +28,4 @@
 
 1. Клонирай репозиторито:
 ```bash
-git clone https://github.com/твоето-потребителско-име/името-на-repo-то.git
+git clone https://github.com/KristiyanDzhurenov/My-Football-Journey-.git
