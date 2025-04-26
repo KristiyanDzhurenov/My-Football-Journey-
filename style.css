@@ -1,14 +1,14 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #000000;
   }
   
   header {
-    background-color: #004080;
-    color: white;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
     padding: 1rem;
     text-align: center;
   }
@@ -22,7 +22,7 @@ body {
   }
   
   nav a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
   }
@@ -37,8 +37,8 @@ body {
   }
   
   footer {
-    background-color: #004080;
-    color: white;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 1rem;
     position: fixed;
@@ -47,12 +47,13 @@ body {
     padding-bottom: 1rem;
   }
   .dark-mode {
-    background-color: #121212;
-    color: #f1f1f1;
+    background-color: #ffffff;
+    color: #000000;
   }
   
   .dark-mode a {
-    color: #4eaaff;
+    background-color: #000000;
+    color: #ffffff;
   }
   
   ul {
