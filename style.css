@@ -1,99 +1,134 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fafafe;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    position: relative;
-  }
-  
-  header, footer {
-    background-color: #fafafe;
-    color: #333;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  nav ul {  
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  nav a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: #007bff;
-  }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* По-четлив шрифт */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.6; /* Повече разстояние между редовете */
+  margin: 0; /* Премахва стандартните отстъпи на body */
+  padding: 20px; /* Добавя малко вътрешен отстъп за по-добър вид */
+}
 
-  main {
-    padding: 2rem;
-    padding-bottom: 5rem;
-    flex: 1;
-  }
-  
-  section {
-    margin-bottom: 2rem;
-    font-size: large;
-  }
+.theme-toggle-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
 
-  .dark-mode {
-    background-color: #444;
-    color: #ddd;
-  }
-  
-  .dark-mode header,
-   .dark-mode footer {
-    background-color: #444;
-    color: #ddd;
-  }
-  .dark-mode nav a {
-    color: #ddd;
-  }
-  
-  footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 5rem;
-  }
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    font-size: large;
-    }
+.theme-toggle-button {
+  padding: 8px 12px;
+  border: 1px solid #ccc; /* По-дискретна граница */
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
 
-    #darkModeToggle {
-      background-color: #f0f0f0;
-      color: #333;
-      border: none;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-      border-radius: 100px;
-      transition: background-color 0.3s ease, color 0.3s ease; /* Добавяме плавен преход */
-  }
-  
-  #darkModeToggle:hover {
-      background-color: #757575;
-  }
-  
-  .dark-mode-button {
-      background-color: #333;
-      color: #f0f0f0;
-  }
-  
-  .dark-mode-transition {
-      transition: background-color 0.5s ease, color 0.5s ease;
-  }
+.theme-toggle-button:hover {
+  background-color: #eee;
+  border-color: #bbb;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333; /* Основен цвят на заглавието */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+nav ul li {
+  margin-bottom: 8px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #007bff; /* Акцентен цвят при ховър */
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #f9f9f9; /* Лек фон за секциите */
+  border-radius: 5px;
+  border: 1px solid #eee; /* Дискретна граница за секциите */
+}
+
+section h2 {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+section ul li {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+footer {
+  font-size: 0.9em;
+  color: #777;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+/* Стилове за тъмна тема */
+.dark-theme {
+  background-color: #222;
+  color: #f0f0f0;
+}
+
+.dark-theme h1,
+.dark-theme section h2 {
+  color: #eee;
+}
+
+.dark-theme nav ul li a {
+  color: #bbb;
+}
+
+.dark-theme nav ul li a:hover {
+  color: #00aaff;
+}
+
+.dark-theme section {
+  background-color: #333;
+  border-color: #444;
+}
+
+.dark-theme section ul li {
+  color: #ccc;
+}
+
+.dark-theme .theme-toggle-button {
+  background-color: #444;
+  color: #eee;
+  border-color: #555;
+}
+
+.dark-theme .theme-toggle-button:hover {
+  background-color: #555;
+  border-color: #666;
+}
+
+.dark-theme footer {
+  color: #999;
+  border-top-color: #444;
+}
