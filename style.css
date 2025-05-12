@@ -4,6 +4,20 @@ body {
   line-height: 1.6; /* Повече разстояние между редовете */
   margin: 0; /* Премахва стандартните отстъпи на body */
   padding: 20px; /* Добавя малко вътрешен отстъп за по-добър вид */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+html,  body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+main {
+  flex: 1;
 }
 
 .theme-toggle-container {
